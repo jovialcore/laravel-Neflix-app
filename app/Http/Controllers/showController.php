@@ -15,7 +15,7 @@ class showController extends Controller
     public function index()
     {
         $shows =  Show::all(); // this Show::all() is refering to the list of columns we have in our database. 
-        // So i gues thats why it is necessary to loop through them using the foreach loop
+        // So i gues thats why it is necessary to loop through them using the foreach loop. and here we want to display everything. so it is necessaary we loop 
 
         return view('index', compact('shows'));
 
@@ -83,7 +83,7 @@ class showController extends Controller
     public function edit($id)
     {
         $shower = Show::findOrFail($id);
-        //Show::findOrFail($id); points specifically to the row with that ID so technically since it already points to the ID there is no need to loop through them using forEACH because i believe the function Show::findOrFail($id); does that already..
+        //Show::findOrFail($id); points specifically to the row with that ID so technically since it already points to the ID there is no need to loop through them using forEACH because i believe the function Show::findOrFail($id); does that already.. and also since it has to do with the data database ID. so no need to use foreach loop as we are more specific with what we are fetching fromn the database using the ID
        
 
         return view('edit', compact('shower'));
