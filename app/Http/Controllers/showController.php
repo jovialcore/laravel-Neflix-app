@@ -40,20 +40,30 @@ class showController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
-    {
-        $validator = $request->validate([
-            //Store method has $request object as the parameter which will be used to access form data. 
+
+     protected function validator() {
+
+       return request()->validate([
+           
             'show_name' => 'required|max:225',
             'genre'=> 'required|max:225',
             'imdb_rating'=> 'required|numeric',
             'lead_actor' => 'required|max:255'
 
+             //Store method has $request object as the parameter which will be used to access form data. 
+
             //“unique:table, column” will see if the same value does not exists in the database
 
             //Key is the field_name and value with being the validation rules. 
         ]);
-        $show = Show::create($validator);
+        
+     
+
+     }
+    public function store()
+    {
+     
+        $show = Show::create($this->validator());
         //create is the same thing as storing(STORE)data inside our file
 
         return redirect('/shows')->with('success', 'Show was succesfully saved');
@@ -83,6 +93,7 @@ class showController extends Controller
     public function edit($id)
     {
         $shower = Show::findOrFail($id);
+        //findfrFail--if it is not able to give you the record wil give you a proper 404 fail page
         //Show::findOrFail($id); points specifically to the row with that ID so technically since it already points to the ID there is no need to loop through them using forEACH because i believe the function Show::findOrFail($id); does that already.. and also since it has to do with the data database ID. so no need to use foreach loop as we are more specific with what we are fetching fromn the database using the ID
        
 
@@ -98,16 +109,11 @@ class showController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $id)
     {
         //so to update we have to make sure th
-       $validator = $request->validate([
-            'show_name' => 'required|max:255',
-            'genre' => 'required|max:255',
-            'imdb_rating'=> 'required|max:255',
-
-       ]);
-       Show::whereId($id)->update($validator);
+     
+       Show::whereId($id)->update($this->validator());
 
        return redirect('/shows')->with('success', 'show was succesfully updated');
     }

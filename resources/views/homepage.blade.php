@@ -1,22 +1,20 @@
 @extends('layout')
 @section('content')
-<div class="row">
-       <div class="col-9">
- <img src="{{asset('images/show.png')}}" class="img-fluid" alt="show imges"> 
+
+
+  
+
+<div class="row mt-5" >
+       <div class="col-12" style="border:2px solid green">
+ <img src="{{asset('images/show.png')}}" class="img-fluid float-left"  width="500px" alt="show imges">
+ <span class="txt"> Never found a great place to create professional displays. So basically we just ad any shows, eidt them then run em so quickly that is basically how we can fix anything that we want to fix using this method that has abrubptlty generated a scalfolding of 27 degrees centigrade
+
+<button class="btn btn-primary " >Create One ASAP</button> 	
+</span>
     </div>
    {{--  for image  --}}
 
-<div class="col-3">
-
-	<div class="txt"> {{-- our text will be here --}}
-
-			<p> Never found a great place to create professional displays 
-
-				<button class="btn btn-primary " >Create One ASAP</button>
-			</p>
-
-	 </div>
-
 </div>
-</div>
+
+
 @endsection
