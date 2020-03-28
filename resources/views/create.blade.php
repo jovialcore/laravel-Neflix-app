@@ -1,11 +1,7 @@
 @extends('layout')
 
 @section('content')
-<style>
-  .uper {
-    margin-top: 40px;
-  }
-</style>
+
 <div class="card uper">
   <div class="card-header">
     Add Shows
@@ -20,23 +16,23 @@
         </ul>
       </div><br />
     @endif
-      <form method="post" action="{{ route('shows.store') }}">
+      <form method="post" action="{{ route('showsRoute.store') }}">
           <div class="form-group">
               @csrf
               <label for="name">Show Name:</label>
-              <input type="text" class="form-control" name="show_name"/>
+              <input type="text" class="form-control" name="show_name" value="{{ old ('show_name')}}">
           </div>
           <div class="form-group">
               <label for="price">Show Genre :</label>
-              <input type="text" class="form-control" name="genre"/>
+              <input type="text" class="form-control" name="genre" value="{{ old ('genre')}}">
           </div>
           <div class="form-group">
               <label for="price">Show IMDB Rating :</label>
-              <input type="text" class="form-control" name="imdb_rating"/>
+              <input type="text" class="form-control" name="imdb_rating" value="{{ old ('imdb_rating')}}"/>
           </div>
           <div class="form-group">
               <label for="quantity">Show Lead Actor :</label>
-              <input type="text" class="form-control" name="lead_actor"/>
+              <input type="text" class="form-control" name="lead_actor" value="{{ old ('lead_actor')}}"/>
           </div>
           <button type="submit" class="btn btn-primary">Create Show</button>
       </form>

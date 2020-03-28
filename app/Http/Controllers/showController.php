@@ -66,7 +66,7 @@ class showController extends Controller
         $show = Show::create($this->validator());
         //create is the same thing as storing(STORE)data inside our file
 
-        return redirect('/shows')->with('success', 'Show was succesfully saved');
+        return redirect('/showsRoute')->with('success', 'Show was succesfully saved');
 
          //When you redirect something without specifying the route method, it automatically goes to the index method or uses the INDEX METHOD 
 
@@ -115,7 +115,7 @@ class showController extends Controller
      
        Show::whereId($id)->update($this->validator());
 
-       return redirect('/shows')->with('success', 'show was succesfully updated');
+       return redirect('/showsRoute')->with('success', 'show was succesfully updated');
     }
 
     /**
@@ -129,7 +129,7 @@ class showController extends Controller
         $show = Show::findOrFail($id);
         $show->delete();
 
-        return redirect('/shows')->with('success', 'Show was successfully deleted');
+        return redirect('/showsRoute')->with('success', 'Show was successfully deleted');
 
 
     }

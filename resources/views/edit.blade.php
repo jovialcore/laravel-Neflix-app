@@ -1,11 +1,7 @@
 @extends('layout')
 
 @section('content')
-<style>
-  .uper {
-    margin-top: 40px;
-  }
-</style>
+
 <div class="card uper">
   <div class="card-header">
     Update Shows
@@ -20,7 +16,7 @@
         </ul>
       </div><br />
     @endif
-    <form method="post" action="{{ route('shows.update', $shower->id) }}">
+    <form method="post" action="{{ route('showsRoute.update', $shower->id) }}">
           <div class="form-group">
               @csrf
               @method('PATCH')

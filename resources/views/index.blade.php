@@ -11,21 +11,15 @@
 	}
 </style>
 
-<div class="uper">
+<div class="uper row">
+	<div class="col-12"> 
 	@if (session()->get('success'))
 	<div class="alert alert-success">
 		{{ session()->get('success') }}
 	@endif
-		<a href=" {{ route('shows.create') }}"> Create a new show</a>
+		<a href=" {{ route('showsRoute.create') }}"> Create a new show</a>
 	</div> <br />
-
-
-
-
-
-
-
-	  <table class="table table-striped">
+	  <table class="table table-striped table-responsive-sm   ">
     <thead>
         <tr>
           <td>ID</td>
@@ -54,13 +48,13 @@ we looped through the show's (shows) array to display the data...
 	<td> {{ $theShow->genre }} </td>
 	<td> {{ number_format($theShow->imdb_rating,2) }} </td>
 	<td>  {{ $theShow->lead_actor }}</td>
-	<td> <a href="{{ route('shows.edit', $theShow->id ) }}" class="btn btn-primary">Edit </a></td>
+	<td> <a href="{{ route('showsRoute.edit', $theShow->id ) }}" class="btn btn-primary">Edit </a></td>
 
 
 		<!-- shows.edit: for the word "shows.(dot)" it is coming from the showCOntroller that we returned from index method. so the shows. is actually a variable that has the value of all the database column values -->
 
 		<td> 
-			<form action=" {{ route('shows.destroy', $theShow->id ) }} " method="post">
+			<form action=" {{ route('showsRoute.destroy', $theShow->id ) }} " method="post">
 				@csrf
 				@method('DELETE')
 				<button class="btn btn-danger" type="submit"> Delete</button>
@@ -71,5 +65,6 @@ we looped through the show's (shows) array to display the data...
 @endforeach <!-- we have to make end every foreach statements after we have done. It is a must!!! -->
 </tbody>
 </table>
+</div>
 </div>
 @endsection

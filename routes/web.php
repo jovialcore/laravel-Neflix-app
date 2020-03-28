@@ -17,6 +17,11 @@ Route::get('/', function () {
     return view('homepage');
 });
 
-Route::resource('shows', 'showController');
+Route::resource('showsRoute', 'showController');
+// this first argument also helps to point to the controller class 
 
 //so the shows will be pointing to whatever method that is in the showController
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
