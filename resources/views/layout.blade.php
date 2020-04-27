@@ -7,7 +7,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>@yield('title', config('app.name'))</title>
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
@@ -41,11 +41,8 @@ footer, p{
 
 </style>  
 </head>
-<body>
+<body class="h-100">
 	<!---Our navigation starts here-->
-	
-
-
 
   <nav class="mb-5 navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
 	<div class="container-fluid">
@@ -71,16 +68,16 @@ footer, p{
   <div class="container-fluid mt-2">
     @yield('content')
 
-
-  <footer>
+ </div>
+  <footer class="">
 <div class="row ">
     <div class="col-12 bg-foot mt-3 pt-4">
       <p class="text-center" >built jovially by @jovialcore </p>
-      <p class="text-center"> &copy2020 </p>
+      <p class="text-center"> &copy; 2020 </p>
     </div>
   </div>
 </footer>
-  </div>
+ 
   <script src="{{ asset('js/app.js') }}" type="text/js"></script>
 </body>
 

@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateShowsTable extends Migration
+class Api extends Migration
 {
     /**
      * Run the migrations.
@@ -13,12 +13,10 @@ class CreateShowsTable extends Migration
      */
     public function up()
     {
-        Schema::create('shows', function (Blueprint $table) {
+           Schema::create('apis', function (Blueprint $table) {
             $table->id();
-            $table->show_name();
-            $table->genre();
-            $table->imdb_rating();
-            $table->lead_actor();
+            $table->string('client_Name');
+            $table->string('client_Item');
             $table->timestamps();
         });
     }
@@ -30,6 +28,6 @@ class CreateShowsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('shows');
+        //
     }
 }

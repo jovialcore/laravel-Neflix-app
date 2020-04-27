@@ -5,8 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Show;
 
-class showController extends Controller
-{
+class showController extends Controller {   
     /**
      * Display a listing of the resource.
      *
@@ -24,6 +23,7 @@ class showController extends Controller
         //to return an index view with data fetched from a database.
     }
 
+
     /**
      * Show the form for creating a new resource.
      *
@@ -33,7 +33,7 @@ class showController extends Controller
     {
         return view('create');
     }
-
+ 
     /**
      * Store a newly created resource in storage.
      *
@@ -60,6 +60,8 @@ class showController extends Controller
      
 
      }
+
+
     public function store()
     {
      
@@ -73,6 +75,7 @@ class showController extends Controller
         //If incoming data fail any of the rules, then it will directly go to the form with the error messages.
     }
 
+
     /**
      * Display the specified resource.
      *
@@ -82,7 +85,7 @@ class showController extends Controller
     public function show($id)
     {
         //
-    }
+    }  
 
     /**
      * Show the form for editing the specified resource.
@@ -117,14 +120,7 @@ class showController extends Controller
 
        return redirect('/showsRoute')->with('success', 'show was succesfully updated');
     }
-
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy($id)
+   public function destroy($id)
     {
         $show = Show::findOrFail($id);
         $show->delete();
@@ -133,4 +129,16 @@ class showController extends Controller
 
 
     }
-}
+
+  }
+    /**
+     * Remove the specified resource from storage.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+ 
+
+        
+  
+   

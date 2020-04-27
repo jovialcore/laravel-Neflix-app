@@ -1,4 +1,8 @@
 @extends('layout')
+@section('title')
+{{config('app.name'). "-Create"}} 
+@endsection
+
 
 @section('content')
 

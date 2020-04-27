@@ -42,7 +42,7 @@ return [
         ],
 
         'api' => [
-            'driver' => 'token',
+            'driver' => 'passport',//tokens was
             'provider' => 'users',
             'hash' => false,
         ],

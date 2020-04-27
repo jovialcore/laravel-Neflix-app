@@ -122,7 +122,7 @@ img {
 		<!--- Carousel/Slider-->
 			<div id="karoindicta" class="carousel slide my-4" data-ride="carousel">
 			<ol class="carousel-indicators ">
-				<li class="mt-5 bg-dark" data-target="#karoindicta" data-slide-to="0" class="active"> </li>
+				<li class="mt-5 bg-dark active" data-target="#karoindicta" data-slide-to="0"> </li>
 				<li class="mt-5 bg-dark" data-target="#karoindicta" data-slide-to="1" > </li>
 				<li class="mt-5 bg-dark" data-target="#karoindicta" data-slide-to="2" > </li>
 			</ol>
