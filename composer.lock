@@ -610,12 +610,6 @@
                 "crossdomain",
                 "laravel"
             ],
-            "funding": [
-                {
-                    "url": "https://github.com/barryvdh",
-                    "type": "github"
-                }
-            ],
             "time": "2020-03-11T21:05:07+00:00"
         },
         {
@@ -1364,6 +1358,7 @@
                 "md",
                 "parser"
             ],
+<<<<<<< HEAD
             "funding": [
                 {
                     "url": "https://github.com/colinodell",
@@ -1429,6 +1424,9 @@
                 "listener"
             ],
             "time": "2018-11-26T11:52:41+00:00"
+=======
+            "time": "2020-02-28T18:53:50+00:00"
+>>>>>>> 90795d0d2f44a043943ea6facd27eda4446cc494
         },
         {
             "name": "league/flysystem",
@@ -1512,6 +1510,7 @@
                 "sftp",
                 "storage"
             ],
+<<<<<<< HEAD
             "funding": [
                 {
                     "url": "https://offset.earth/frankdejonge",
@@ -1596,6 +1595,9 @@
                 "server"
             ],
             "time": "2019-07-13T18:58:26+00:00"
+=======
+            "time": "2020-03-08T18:53:20+00:00"
+>>>>>>> 90795d0d2f44a043943ea6facd27eda4446cc494
         },
         {
             "name": "monolog/monolog",
@@ -1747,6 +1749,7 @@
                 "datetime",
                 "time"
             ],
+<<<<<<< HEAD
             "funding": [
                 {
                     "url": "https://opencollective.com/Carbon",
@@ -1758,6 +1761,9 @@
                 }
             ],
             "time": "2020-03-31T13:43:19+00:00"
+=======
+            "time": "2020-03-01T11:11:58+00:00"
+>>>>>>> 90795d0d2f44a043943ea6facd27eda4446cc494
         },
         {
             "name": "nikic/php-parser",
@@ -2878,6 +2884,7 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "https://symfony.com",
+<<<<<<< HEAD
             "funding": [
                 {
                     "url": "https://symfony.com/sponsor",
@@ -2893,6 +2900,9 @@
                 }
             ],
             "time": "2020-03-30T11:42:42+00:00"
+=======
+            "time": "2020-02-24T15:05:31+00:00"
+>>>>>>> 90795d0d2f44a043943ea6facd27eda4446cc494
         },
         {
             "name": "symfony/css-selector",
@@ -3014,6 +3024,7 @@
             ],
             "description": "Symfony ErrorHandler Component",
             "homepage": "https://symfony.com",
+<<<<<<< HEAD
             "funding": [
                 {
                     "url": "https://symfony.com/sponsor",
@@ -3029,6 +3040,9 @@
                 }
             ],
             "time": "2020-03-30T14:14:32+00:00"
+=======
+            "time": "2020-02-29T10:07:09+00:00"
+>>>>>>> 90795d0d2f44a043943ea6facd27eda4446cc494
         },
         {
             "name": "symfony/event-dispatcher",
@@ -3098,6 +3112,7 @@
             ],
             "description": "Symfony EventDispatcher Component",
             "homepage": "https://symfony.com",
+<<<<<<< HEAD
             "funding": [
                 {
                     "url": "https://symfony.com/sponsor",
@@ -3113,6 +3128,9 @@
                 }
             ],
             "time": "2020-03-27T16:56:45+00:00"
+=======
+            "time": "2020-02-22T20:09:08+00:00"
+>>>>>>> 90795d0d2f44a043943ea6facd27eda4446cc494
         },
         {
             "name": "symfony/event-dispatcher-contracts",
@@ -3219,6 +3237,7 @@
             ],
             "description": "Symfony Finder Component",
             "homepage": "https://symfony.com",
+<<<<<<< HEAD
             "funding": [
                 {
                     "url": "https://symfony.com/sponsor",
@@ -3234,6 +3253,9 @@
                 }
             ],
             "time": "2020-03-27T16:56:45+00:00"
+=======
+            "time": "2020-02-14T07:43:07+00:00"
+>>>>>>> 90795d0d2f44a043943ea6facd27eda4446cc494
         },
         {
             "name": "symfony/http-foundation",
@@ -3288,6 +3310,7 @@
             ],
             "description": "Symfony HttpFoundation Component",
             "homepage": "https://symfony.com",
+<<<<<<< HEAD
             "funding": [
                 {
                     "url": "https://symfony.com/sponsor",
@@ -3302,6 +3325,8 @@
                     "type": "tidelift"
                 }
             ],
+=======
+>>>>>>> 90795d0d2f44a043943ea6facd27eda4446cc494
             "time": "2020-03-30T14:14:32+00:00"
         },
         {
@@ -3398,6 +3423,7 @@
             ],
             "description": "Symfony HttpKernel Component",
             "homepage": "https://symfony.com",
+<<<<<<< HEAD
             "funding": [
                 {
                     "url": "https://symfony.com/sponsor",
@@ -3413,6 +3439,9 @@
                 }
             ],
             "time": "2020-03-30T15:04:59+00:00"
+=======
+            "time": "2020-02-29T10:41:30+00:00"
+>>>>>>> 90795d0d2f44a043943ea6facd27eda4446cc494
         },
         {
             "name": "symfony/mime",
@@ -3474,6 +3503,7 @@
                 "mime",
                 "mime-type"
             ],
+<<<<<<< HEAD
             "funding": [
                 {
                     "url": "https://symfony.com/sponsor",
@@ -3488,6 +3518,8 @@
                     "type": "tidelift"
                 }
             ],
+=======
+>>>>>>> 90795d0d2f44a043943ea6facd27eda4446cc494
             "time": "2020-03-27T16:56:45+00:00"
         },
         {
@@ -3695,6 +3727,7 @@
                 "portable",
                 "shim"
             ],
+<<<<<<< HEAD
             "funding": [
                 {
                     "url": "https://symfony.com/sponsor",
@@ -3709,6 +3742,8 @@
                     "type": "tidelift"
                 }
             ],
+=======
+>>>>>>> 90795d0d2f44a043943ea6facd27eda4446cc494
             "time": "2020-03-09T19:04:49+00:00"
         },
         {
@@ -3768,6 +3803,7 @@
                 "portable",
                 "shim"
             ],
+<<<<<<< HEAD
             "funding": [
                 {
                     "url": "https://symfony.com/sponsor",
@@ -3782,6 +3818,8 @@
                     "type": "tidelift"
                 }
             ],
+=======
+>>>>>>> 90795d0d2f44a043943ea6facd27eda4446cc494
             "time": "2020-03-09T19:04:49+00:00"
         },
         {
@@ -3837,6 +3875,7 @@
                 "portable",
                 "shim"
             ],
+<<<<<<< HEAD
             "funding": [
                 {
                     "url": "https://symfony.com/sponsor",
@@ -3851,6 +3890,8 @@
                     "type": "tidelift"
                 }
             ],
+=======
+>>>>>>> 90795d0d2f44a043943ea6facd27eda4446cc494
             "time": "2020-02-27T09:26:54+00:00"
         },
         {
@@ -4126,6 +4167,7 @@
                 "uri",
                 "url"
             ],
+<<<<<<< HEAD
             "funding": [
                 {
                     "url": "https://symfony.com/sponsor",
@@ -4141,6 +4183,9 @@
                 }
             ],
             "time": "2020-03-30T11:42:42+00:00"
+=======
+            "time": "2020-02-25T14:24:11+00:00"
+>>>>>>> 90795d0d2f44a043943ea6facd27eda4446cc494
         },
         {
             "name": "symfony/service-contracts",
@@ -4275,6 +4320,7 @@
             ],
             "description": "Symfony Translation Component",
             "homepage": "https://symfony.com",
+<<<<<<< HEAD
             "funding": [
                 {
                     "url": "https://symfony.com/sponsor",
@@ -4290,6 +4336,9 @@
                 }
             ],
             "time": "2020-03-27T16:56:45+00:00"
+=======
+            "time": "2020-02-04T07:41:34+00:00"
+>>>>>>> 90795d0d2f44a043943ea6facd27eda4446cc494
         },
         {
             "name": "symfony/translation-contracts",
@@ -4548,6 +4597,7 @@
                 "env",
                 "environment"
             ],
+<<<<<<< HEAD
             "funding": [
                 {
                     "url": "https://tidelift.com/funding/github/packagist/vlucas/phpdotenv",
@@ -4555,6 +4605,9 @@
                 }
             ],
             "time": "2020-03-27T23:37:15+00:00"
+=======
+            "time": "2020-03-12T13:44:15+00:00"
+>>>>>>> 90795d0d2f44a043943ea6facd27eda4446cc494
         },
         {
             "name": "voku/portable-ascii",
@@ -4603,6 +4656,7 @@
                 "clean",
                 "php"
             ],
+<<<<<<< HEAD
             "funding": [
                 {
                     "url": "https://www.paypal.me/moelleken",
@@ -4622,6 +4676,9 @@
                 }
             ],
             "time": "2020-03-13T01:23:26+00:00"
+=======
+            "time": "2020-03-06T02:47:42+00:00"
+>>>>>>> 90795d0d2f44a043943ea6facd27eda4446cc494
         }
     ],
     "packages-dev": [
@@ -4732,12 +4789,6 @@
                 "facade",
                 "flare",
                 "reporting"
-            ],
-            "funding": [
-                {
-                    "url": "https://www.patreon.com/spatie",
-                    "type": "patreon"
-                }
             ],
             "time": "2020-03-02T15:52:04+00:00"
         },
@@ -5251,6 +5302,7 @@
                 "php",
                 "symfony"
             ],
+<<<<<<< HEAD
             "funding": [
                 {
                     "url": "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=66BYDWAT92N6L",
@@ -5266,6 +5318,9 @@
                 }
             ],
             "time": "2020-04-04T19:56:08+00:00"
+=======
+            "time": "2020-03-07T12:46:00+00:00"
+>>>>>>> 90795d0d2f44a043943ea6facd27eda4446cc494
         },
         {
             "name": "phar-io/manifest",
@@ -5995,12 +6050,6 @@
                 "highlight.php",
                 "syntax"
             ],
-            "funding": [
-                {
-                    "url": "https://github.com/allejo",
-                    "type": "github"
-                }
-            ],
             "time": "2020-03-02T05:59:21+00:00"
         },
         {
@@ -6715,6 +6764,5 @@
     "platform": {
         "php": "^7.2.5"
     },
-    "platform-dev": [],
-    "plugin-api-version": "1.1.0"
+    "platform-dev": []
 }
