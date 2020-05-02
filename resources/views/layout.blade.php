@@ -17,8 +17,9 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 
     <!-- Styles -->
+      <link href="{{ asset('css/shop.css') }}" rel="stylesheet">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/shop.css') }}" rel="stylesheet">
+  
 
 <style>
   body {
@@ -41,8 +42,10 @@ footer, p{
 
 </style>  
 </head>
-<body class="h-100">
+<body >
 	<!---Our navigation starts here-->
+  <!-- Part 1: Wrap all page content here -->
+    <div id="wrap">
 
   <nav class="mb-5 navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
 	<div class="container-fluid">
@@ -65,19 +68,19 @@ footer, p{
 		</div>
   </div>
 	</nav>
-  <div class="container-fluid mt-2">
-    @yield('content')
 
- </div>
-  <footer class="">
-<div class="row ">
-    <div class="col-12 bg-foot mt-3 pt-4">
-      <p class="text-center" >built jovially by @jovialcore </p>
+  <div class="container-fluid mgCustom">
+    @yield('content')
+  </div>
+    <div id="push"></div>
+</div>
+
+  <footer>
+    <div class=" bg-foot ">
+      <p class="text-center pt-5" >built jovially by @jovialcore </p>
       <p class="text-center"> &copy; 2020 </p>
     </div>
-  </div>
 </footer>
- 
   <script src="{{ asset('js/app.js') }}" type="text/js"></script>
 </body>
 

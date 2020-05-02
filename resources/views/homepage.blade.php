@@ -162,7 +162,7 @@ img {
 	</div>
 </div>
 
-<div class="row mt-4">
+<div class="row mt-4 ">
 	<div class="col-10  shadow shadow-lg mx-auto test-bg ">
 		<p class="text-center ">Subscibe to Our NewsLetter</p>
 		<div class="form-group pt-1">
