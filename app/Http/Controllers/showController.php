@@ -18,10 +18,13 @@ class showController extends Controller {
 
         return view('index', compact('shows'));
 
+
+    }
+
             // return here means that the code block should push all the contents of view to the index.balde.php file and let us use the shows variable by compacting it with the laravel comapct function. so we can manipulate the Show::all varaible in our main edit.blade.php
 
         //to return an index view with data fetched from a database.
-    }
+
 
 
     /**
@@ -50,8 +53,6 @@ class showController extends Controller {
             'imdb_rating'=> 'required|numeric',
             'lead_actor' => 'required|max:255'
 
-             //Store method has $request object as the parameter which will be used to access form data. 
-
             //“unique:table, column” will see if the same value does not exists in the database
 
             //Key is the field_name and value with being the validation rules. 
@@ -61,6 +62,8 @@ class showController extends Controller {
 
      }
 
+
+             //Store method has $request object as the parameter which will be used to access form data. 
 
     public function store()
     {

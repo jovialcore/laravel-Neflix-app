@@ -189,21 +189,17 @@
 </style>
 @section('content')
 
-
-
 @if (session()->get('success'))
 <span class="alert alert-success">
 	{{session()->get('success')}}
 </span>
 @endif
 
-
-		<a href="{{ route('showsRoute.create') }}"><button class="btn btn-primary" style="background-color: #3d3b55; "> Create a new show </button> </a>
+		<a href="{{ route('showsRoute.create') }}"> Create a new show </a>
 <br>
-
-<h1 style="text-align:center;" class="rounded"> Show Lists</h1>
+<h1 style="text-align:center"> Render Basis </h1>
 <div class="table-responsive-vertical">
-	<table class="table table-striped  table-hover table-mc-light-blue ">
+	<table class="table table-striped  table-bordered table-hover table-mc-light-blue ">
 		<thead>
 			<tr>
 				<th> Id </th>
@@ -211,41 +207,22 @@
 				<th> Show Genre</th>
 				<th> Show IMDB Rating</th>
 				<th> Lead Actor</th>
-				<th> hannah</th>
-			
+				<th> Action</th>
 			</tr>
 		</thead>
-	
+		@foreach ($shows as $theShow)
 		<tbody>
-
-				@foreach ($shows as $theShow)
 		<tr> 
 			<td data-title="Id"> {{$theShow->id}} </td>
 			<td data-title="Show Name">{{$theShow->show_name}} </td>
 			<td data-title="Show Genre"> {{$theShow->genre}} </td>
 			<td data-title="Show IMDB Rating"> {{ number_format($theShow->imdb_rating, 2)}}</td>
 			<td data-title="Lead Actor"> {{$theShow->lead_actor}}</td>
-			<td data-title="Action"> <a href="{{ route('showsRoute.edit', $theShow->id ) }}"> <button class="btn btn-primary" style="background-color: #3d3b55; ">Edit</button> 
-
-				<td><form type="hidden" action=" {{ route('showsRoute.destroy', $theShow->id ) }} " method="post">
-				@csrf
-				@method('DELETE')
-				<button class="btn btn-danger " type="submit"> Delete</button>
-			</form></a> </td>
-				
+			<td data-title="Action"> <a href="{{ route('showsRoute.edit', $theShow->id ) }}"> <button class="btn btn-primary">Edit</button></a>
+			</td>
 		</tr>
-@endforeach
-			{{-- 	<tr> 
-			<td data-title="Product image"> 1 </td>
-			<td data-title="Nae"> clean my cry</td>
-			<td data-title="Price"> 45 </td>
-			<td data-title="Chai"> jsfdkgudfj</td>
-			<td data-title="Okay"> bsdkjfnbdjbajd</td>
-			<td data-title="hannah">jhfikj </td>
-			<td data-title="Biko"> jjo</td>
-		</tr> --}}
 	</tbody>
-	
+		@endforeach
 </table>
 	
 </div>

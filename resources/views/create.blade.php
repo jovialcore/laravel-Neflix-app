@@ -7,7 +7,7 @@
 @section('content')
 
 <div class="card uper">
-  <div class="card-header">
+  <div class="card-header" style="background-color: #3d3b55; color:white; text-align: center;">
     Add Shows
   </div>
   <div class="card-body">
@@ -20,7 +20,7 @@
         </ul>
       </div><br />
     @endif
-      <form method="post" action="{{ route('showsRoute.store') }}">
+      <form method="post" action="{{ route('showsRoute.store') }} " >
           <div class="form-group">
               @csrf
               <label for="name">Show Name:</label>
@@ -38,7 +38,7 @@
               <label for="quantity">Show Lead Actor :</label>
               <input type="text" class="form-control" name="lead_actor" value="{{ old ('lead_actor')}}"/>
           </div>
-          <button type="submit" class="btn btn-primary">Create Show</button>
+          <button type="submit" class="btn btn-primary" style="background-color: #3d3b55;">Create Show</button>
       </form>
   </div>
 </div>
